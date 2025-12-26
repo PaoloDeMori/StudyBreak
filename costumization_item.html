@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Study Break - Homepage
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            STUDY BREAK
+        </h1>
+    </header>
+    <main>
+        <header>
+            <a href="homepage.html">
+                <img src="img/icons/back.svg" alt="search icon" />
+            </a>
+            <h2>
+                <!-- <?php echo htmlspecialchars($prodotto['nome']); ?> -->
+            </h2>
+        </header>
+        <section>
+            <img src="img/cappuccino.png" alt="Cappuccino" />
+            <form action="add-to-cart.php" method="POST" id="customization-item">
+                <input type="hidden" name="product_id" value="1">
+
+                <section>
+                    <fieldset>
+                        <legend>Quantity</legend>
+                        <button type="button" id="decrease">
+                            <img src="img/icons/decrease.svg" alt="decrease icon" />
+                        </button>
+                        <span id="quantity-value">1</span>
+                        <button type="button" id="increase">
+                            <img src="img/icons/increase.svg" alt="increase icon" />
+                        </button>
+                    </fieldset>
+                </section>
+                <input type="hidden" name="quantity" id="quantity-input" value="1">
+                <hr/>
+
+                <section>
+                    <fieldset>
+                        <legend>Size</legend>
+                        <label>
+                            <input type="radio" name="size" value="250" required/>
+                            250
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="350"/>
+                            350
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="450"/>
+                            450
+                        </label>
+                    </fieldset>
+                </section>
+                <hr/>
+
+                <section>
+                    <fieldset class="sugar">
+                        <legend>Sugar</legend>
+
+                        <input type="radio" id="z1" name="zucchero" value="1"/>
+                        <label for="z1"></label>
+
+                        <input type="radio" id="z2" name="zucchero" value="2"/>
+                        <label for="z2"></label>
+
+                        <input type="radio" id="z3" name="zucchero" value="3"/>
+                        <label for="z3"></label>
+
+                        <input type="radio" id="z4" name="zucchero" value="4"/>
+                        <label for="z4"></label>
+
+                        <input type="radio" id="z5" name="zucchero" value="5"/>
+                        <label for="z5"></label>
+                    </fieldset>
+                </section>
+                <hr/>
+
+                <section>
+                    <h3>Milk</h3>
+                    <label>
+                        <input type="checkbox" name="milk" value="1"/>
+                        Add milk
+                    </label>
+                </section>
+
+            </form>
+        </section>
+
+        <footer>
+            <input type="submit" value="Save"/>
+        </footer>
+    </main>
+</body>
+
+</html>

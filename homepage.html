@@ -20,18 +20,24 @@
                 <button type="button">
                     <img src="img/icons/inverse_search.svg" alt="search icon"/>
                 </button>
+                <form id="search-form" action="" method="GET" style="display:none;">
+                    <input type="text" name="q" id="search-input" placeholder="Search..."/>
+                    <button type="button">
+                        <img src="img/icons/exit_search.svg" alt="exit"/>
+                    </button>
+                </form>
                 <a href="filters.html">
                     <img src="img/icons/filters.svg" alt="filters' icon"/>
                 </a>
             </header>
 
-            <section>
+            <section id="Best Products">
                 <h2>
                     Best Products
                 </h2>
                 <ul>
                     <li>
-                        <a href="product.html">
+                        <a href="costumization_item.html">
                             <article>
                             <header><img src="img/cappuccino.png" alt=""/></header>
                                 <h3>Cappuccino</h3>
@@ -40,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="product.html">
+                        <a href="costumization_item.html">
                             <article>
                             <header><img src="img/cappuccino.png" alt=""/></header>
                                 <h3>Cappuccino</h3>
@@ -49,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="product.html">
+                        <a href="costumization_item.html">
                             <article>
                             <header><img src="img/cappuccino.png" alt=""/></header>
                                 <h3>Cappuccino</h3>
@@ -59,7 +65,11 @@
                     </li>
                 </ul>
             </section>
-            
+
+            <section id="search-results">
+                <ul id="results-list"></ul>
+            </section>
+
             <footer>
                 <a href="create.html">Create your infusion</a>
             </footer>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Study Break - Homepage
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            STUDY BREAK
+        </h1>
+        <a href="notifications.html">
+            <img src="img/icons/notifications_bell.svg" alt="notifications' icon">
+        </a>
+    </header>
+    <main>
+        <header>
+            <button type="button">
+                <img src="img/icons/search.svg" alt="search icon" />
+            </button>
+            <form id="search-form" action="" method="GET" style="display:none;">
+                <input type="text" name="q" id="search-input" placeholder="Search..." />
+                <button type="button">
+                    <img src="img/icons/exit_search.svg" alt="exit" />
+                </button>
+            </form>
+            <a href="filters.html" class="disabled">
+                <img src="img/icons/inverse_filters.svg" alt="filters' icon" />
+            </a>
+        </header>
+
+        <section id="Filters">
+            <h2>
+                Filters
+            </h2>
+            <hr />
+            <form id="filters-form" action="search.php" method="GET">
+                <fieldset class="rating">
+                    <legend>Quality</legend>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" class="star"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" class="star"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" class="star"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" class="star"></label>
+
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" class="star"></label>
+                </fieldset>
+
+                <section>
+                    <h3>Price</h3>
+                    <label>
+                        from €2.00 to €10.00
+                        <input type="range" name="price" min="2" max="15" />
+                    </label>
+                </section>
+
+                <button type="submit">Apply</button>
+            </form>
+
+        </section>
+
+
+        <section id="search-results">
+            <ul id="results-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="homepage.html">
+                        <img src="img/icons/inverse_home.svg" alt=" go to homepage icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <img src="img/icons/cart.svg" alt=" go to cart icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="favourites.html">
+                        <img src="img/icons/heart.svg" alt="go to favourites icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="img/icons/user.svg" alt="go to user's page icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
