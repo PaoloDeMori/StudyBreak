@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Study Break - Homepage
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            STUDY BREAK
+        </h1>
+    </header>
+    <main>
+        <header>
+            <a href="homepage.html">
+                <img src="img/icons/back.svg" alt="search icon" />
+            </a>
+            <h2>
+                Your Infusion
+            </h2>
+        </header>
+        <section>
+            <form action="add-to-cart.php" method="POST" id="customize-infusion">
+                <fieldset>
+                    <!--
+                    <?php while ($row = $result->fetch_assoc()): ?>
+                    <div class="ingredient">
+                        <label>
+                        <input type="checkbox" name="ingredients[]" value="<?= $row['id'] ?>" data-price="<?= $row['price'] ?>">
+                        <?= htmlspecialchars($row['name']) ?>
+                        </label>
+                        <span class="price">€<?= number_format($row['price'], 2) ?></span>
+                    </div>
+                    <?php endwhile; ?>
+                    -->
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <label for="total-price">
+                Total: €
+            </label>
+            <output id="total-price">
+                0.00
+            </output>
+        </section>
+
+        <footer>
+            <input type="submit" value="Confirm" />
+        </footer>
+    </main>
+</body>
+
+</html>
