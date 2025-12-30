@@ -5,19 +5,21 @@
         <title>
             Study Break - Login
         </title>
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
             <section>
-                <h1>
-                    STUDY BREAK
+                <h1 class="large">
+                    Study Break
                 </h1>
                 <p>What's better after a long day of studying?</p>
                 <p>Hot drink, coffee and much more</p>
             </section>
         </header>
         <main>
-            <form action="#" method="post">
+            <form action="#" method="post" class="input-fieldset">
                 <fieldset>
                     <legend>User's data</legend>
                     <label>Username
@@ -26,13 +28,13 @@
                     <label>Password
                         <input type="password" name="password" placeholder="Enter your password" required/>
                     </label>
-                    <input type="submit" name="submit" value="Log In" />
+                    <button type="submit" class="btn">Log in</button>
                 </fieldset>
             </form>
         </main>
         <footer>
             <p>Don't have an account?</p>
-            <a href="signup.html">New Account</a>
+            <a href="signup.html" class="btn">New Account</a>
         </footer>
     </body>
 </html>

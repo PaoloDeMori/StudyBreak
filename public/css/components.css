@@ -1,0 +1,53 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 194px;
+    height: 45px;
+
+    border: none;
+    border-radius: var(--radius-btn);
+
+    font-family: var(--font-base);
+    font-size: var(--font-size-btn);
+    text-decoration: none;
+    line-height: var(--line-height-base);
+
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    transform: scale(0.98);
+}
+
+.input-fieldset {
+    width: 100%;
+    max-width: 400px; /* larghezza massima su desktop */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-bg);
+    font-family: var(--font-base);
+}
+
+.input-fieldset legend {
+    display: none;
+}
+
+.input-fieldset label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+h1.large {
+    font-size: var(--font-size-title-large);
+}

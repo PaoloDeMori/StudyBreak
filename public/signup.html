@@ -5,18 +5,20 @@
         <title>
             Study Break - SignUp
         </title>
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
             <section>
-                <h1>
-                    STUDY BREAK
+                <h1 class="large">
+                    Study Break
                 </h1>
 
             </section>
         </header>
         <main>
-            <form action="#" method="post">
+            <form action="#" method="post" class="input-fieldset">
                 <fieldset>
                     <legend>User's sign up data</legend>
                     <label>Username
@@ -25,19 +27,19 @@
                     <label>Email
                         <input type="email" name="email" placeholder="Enter your email address" required/>
                     </label>
-                    <label>password
+                    <label>Password
                         <input type="password" name="password" placeholder="Enter your password" required/>
                     </label>
-                    <label>password
-                        <input type="password" name="confirm password" placeholder="Confirm your password" required/>
+                    <label>Confirm Password
+                        <input type="password" name="password" placeholder="Confirm your password" required/>
                     </label>
-                    <input type="submit" name="submit" value="Register" />
+                    <button type="submit" class="btn">Register</button>
                 </fieldset>
             </form>
         </main>
         <footer>
             <p>Made a mistake?</p>
-            <a href="login.html">Go Back</a>
+            <a href="login.html" class="btn">Go Back</a>
         </footer>
     </body>
 </html>

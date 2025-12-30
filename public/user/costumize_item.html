@@ -11,20 +11,20 @@
 <body>
     <header>
         <h1>
-            STUDY BREAK
+            Study Break
         </h1>
     </header>
     <main>
         <header>
             <a href="homepage.html">
-                <img src="img/icons/back.svg" alt="search icon" />
+                <img src="../../img/icons/back.svg" alt="search icon" />
             </a>
             <h2>
                 <!-- <?php echo htmlspecialchars($prodotto['nome']); ?> -->
             </h2>
         </header>
         <section>
-            <img src="img/cappuccino.png" alt="Cappuccino" />
+            <img src="../../img/cappuccino.png" alt="Cappuccino" />
             <form action="add-to-cart.php" method="POST" id="customize-item">
                 <input type="hidden" name="product_id" value="1">
 
@@ -32,11 +32,11 @@
                     <fieldset>
                         <legend>Quantity</legend>
                         <button type="button" id="decrease">
-                            <img src="img/icons/decrease.svg" alt="decrease icon" />
+                            <img src="../../img/icons/decrease.svg" alt="decrease icon" />
                         </button>
                         <span id="quantity-value">1</span>
                         <button type="button" id="increase">
-                            <img src="img/icons/increase.svg" alt="increase icon" />
+                            <img src="../../img/icons/increase.svg" alt="increase icon" />
                         </button>
                     </fieldset>
                 </section>
@@ -93,7 +93,8 @@
         </section>
 
         <footer>
-            <input type="submit" value="Save"/>
+            <input type="submit" value="Save" class="btn" class="btn"/>
+            <!--redirect verso la home da backend-->
         </footer>
     </main>
 </body>
