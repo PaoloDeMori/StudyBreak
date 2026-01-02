@@ -3,3 +3,31 @@ header h1 {
   text-transform: capitalize;
   text-align: center;
 }
+
+footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 194px;
+  height: 45px;
+
+  border: none;
+  border-radius: var(--radius-btn);
+
+  font-family: var(--font-base);
+  font-size: var(--font-size-btn);
+  text-decoration: none;
+  line-height: var(--line-height-base);
+
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+
+  cursor: pointer;
+}
+
+footer a:active {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  transform: scale(0.98);
+}

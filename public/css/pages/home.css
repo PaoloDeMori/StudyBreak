@@ -1,0 +1,49 @@
+main > footer {
+    position: fixed;
+    bottom: calc(var(--header-footer-size) + 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+main footer a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 308px;
+    height: 45px;
+    padding: 0 20px;
+    border: none;
+    border-radius: var(--radius-btn);
+    font-family: var(--font-base);
+    font-size: var(--font-size-btn);
+    text-decoration: none;
+    line-height: var(--line-height-base);
+    color: var(--color-surface);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+main footer a::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    border-radius: var(--radius-btn);
+}
+
+main footer a:hover::before {
+    background: linear-gradient(to right, var(--color-primary),var(--color-secondary));
+    opacity: 1;
+}
+
+h2 {
+    display: inline-block;
+    padding: 14px 20px;
+    border-top: 1px solid var(--color-text);
+}
+
