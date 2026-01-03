@@ -1,11 +1,6 @@
 @import "../base.css";
 @import "../components/button.css";
-
-header h1 {
-  font-size: var(--font-size-title-large);
-  text-transform: capitalize;
-  text-align: center;
-}
+@import "../components/entry.css";
 
 body {
   min-height: 100vh;
@@ -20,11 +15,18 @@ footer {
   text-align: center;
 }
 
+header h1 {
+  font-size: var(--font-size-title-large);
+  text-transform: capitalize;
+  text-align: center;
+}
+
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: var(--header-footer-size);
 }
+
 
 label {
   align-self: flex-start;
@@ -32,20 +34,9 @@ label {
 
 fieldset {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 298px;
-}
-
-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 div {
@@ -54,14 +45,6 @@ div {
   align-items: center;
   justify-content: center;
   width: 100%;
-  z-index: 0;
-}
-
-input {
-  width: 100%;
-  position: relative;
-  display: block;
-  box-sizing: border-box;
   z-index: 0;
 }
 
