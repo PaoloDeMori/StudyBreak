@@ -1,0 +1,23 @@
+main form fieldset {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-bg);
+    font-family: var(--font-base);
+}
+
+main form legend {
+    display: none;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+
+

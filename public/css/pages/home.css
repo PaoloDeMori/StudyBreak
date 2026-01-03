@@ -1,3 +1,27 @@
+@import "../base.css";
+@import "../components/header.css";
+@import "../components/navbar.css";
+@import "../components/searchbar.css";
+@import "../components/card.css";
+@import "../components/entry.css";
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+}
+
+h2 {
+    display: inline-block;
+    margin: 14px;
+    padding: 0 20px;
+    border-top: 1px solid var(--color-text);
+}
+
+/*gradient btn*/
 main > footer {
     position: fixed;
     bottom: calc(var(--header-footer-size) + 30px);
@@ -6,7 +30,7 @@ main > footer {
     z-index: 100;
 }
 
-main footer a {
+main > footer a {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -25,7 +49,7 @@ main footer a {
     overflow: hidden;
 }
 
-main footer a::before {
+main > footer a::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -36,14 +60,7 @@ main footer a::before {
     border-radius: var(--radius-btn);
 }
 
-main footer a:hover::before {
+main > footer a:hover::before {
     background: linear-gradient(to right, var(--color-primary),var(--color-secondary));
     opacity: 1;
 }
-
-h2 {
-    display: inline-block;
-    padding: 14px 20px;
-    border-top: 1px solid var(--color-text);
-}
-
