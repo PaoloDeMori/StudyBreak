@@ -1,45 +1,61 @@
 <!doctype html>
 <html lang="it">
-    <head>
-        <meta charset="utf-8"/>
-        <title>
-            Study Break - SignUp
-        </title>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/pages/auth.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <section>
-                <h1>
-                    Create account
-                </h1>
-            </section>
-        </header>
-        <main>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>User's sign up data</legend>
-                    <label>Username
-                        <input type="text" name="username" placeholder="Enter your username" required/>
-                    </label>
-                    <label>Email
-                        <input type="email" name="email" placeholder="Enter your email address" required/>
-                    </label>
-                    <label>Password
-                        <input type="password" name="password" placeholder="Enter your password" required/>
-                    </label>
-                    <label>Confirm Password
-                        <input type="password" name="password" placeholder="Confirm your password" required/>
-                    </label>
-                    <button type="submit">Register</button>
-                </fieldset>
-            </form>
-        </main>
-        <footer>
-            <p>Made a mistake?</p>
-            <a href="login.html">Go Back</a>
-        </footer>
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Study Break - SignUp
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="../public/css/pages/auth.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>
+                Create account
+            </h1>
+        </section>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>User's sign up data</legend>
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" placeholder="Enter your username"
+                    autocomplete="username" required />
+                <br />
+
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email address" autocomplete="email"
+                    required />
+                <br />
+
+                <label for="password">Password</label>
+                <div>
+                    <input id="password" type="password" name="password" placeholder="Enter your password"
+                        autocomplete="new-password" required />
+                    <button type="button"><img src="../img/icons/hashed.svg" alt="show password" /></button>
+                </div>
+                <br />
+
+                <label for="confirm">Confirm Password</label>
+                <div>
+                    <input id="confirm" type="password" name="password" placeholder="Confirm your password"
+                        autocomplete="new-password" required />
+                    <button type="button"><img src="../img/icons/hashed.svg" alt="show password" /></button>
+                </div>
+                <br />
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Made a mistake?</p>
+        <a href="login.html">Go Back</a>
+    </footer>
+</body>
+
 </html>

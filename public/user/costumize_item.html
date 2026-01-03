@@ -6,6 +6,8 @@
     <title>
         Study Break - Costumize Item
     </title>
+    <link rel="stylesheet" type="text/css" href="../css/pages/costumize_item.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -25,76 +27,65 @@
         </header>
         <section>
             <img src="../../img/cappuccino.png" alt="Cappuccino" />
-            <form action="add-to-cart.php" method="POST" id="customize-item">
-                <input type="hidden" name="product_id" value="1">
-
-                <section>
-                    <fieldset>
-                        <legend>Quantity</legend>
-                        <button type="button" id="decrease">
+            <form action="#" method="POST">
+                <fieldset>
+                    <h3>Quantity</h3>
+                    <div>
+                        <button type="button">
                             <img src="../../img/icons/decrease.svg" alt="decrease icon" />
                         </button>
-                        <span id="quantity-value">1</span>
-                        <button type="button" id="increase">
+                        <output id="quantity" name="quantity">1</output>
+                        <button type="button">
                             <img src="../../img/icons/increase.svg" alt="increase icon" />
                         </button>
-                    </fieldset>
-                </section>
-                <input type="hidden" name="quantity" id="quantity-input" value="1">
+                    </div>
+                </fieldset>
 
-                <section>
-                    <fieldset>
-                        <legend>Size</legend>
-                        <label>
-                            <input type="radio" name="size" value="250" required/>
-                            250
-                        </label>
-                        <label>
-                            <input type="radio" name="size" value="350"/>
-                            350
-                        </label>
-                        <label>
-                            <input type="radio" name="size" value="450"/>
-                            450
-                        </label>
-                    </fieldset>
-                </section>
+                <fieldset>
+                    <h3>Size</h3>
+                    <div>
+                        <input id="250" type="radio" name="size" value="250" required />
+                        <label for="250"> <img src="../../img/icons/small_cup.svg" alt="250 ml"/> 250</label>
 
-                <section>
-                    <fieldset class="sugar">
-                        <legend>Sugar</legend>
+                        <input id="350" type="radio" name="size" value="350" required />
+                        <label for="350"> <img src="../../img/icons/medium_cup.svg" alt="250 ml"/>350</label>
 
-                        <input type="radio" id="z1" name="zucchero" value="1"/>
-                        <label for="z1"></label>
+                        <input id="450" type="radio" name="size" value="450" required />
+                        <label for="450"> <img src="../../img/icons/big_cup.svg" alt="250 ml"/>450</label>
+                    </div>
+                </fieldset>
 
-                        <input type="radio" id="z2" name="zucchero" value="2"/>
-                        <label for="z2"></label>
+                <fieldset>
+                    <h3>Sugar</h3>
+                    <div>
+                        <img src="../../img/icons/cancel.svg" alt="unselect all"/>
+                        <input type="radio" id="sugar1" name="sugar" value="1">
+                        <label for="sugar1" data-value="1"></label>
 
-                        <input type="radio" id="z3" name="zucchero" value="3"/>
-                        <label for="z3"></label>
+                        <input type="radio" id="sugar2" name="sugar" value="2">
+                        <label for="sugar2" data-value="2"></label>
 
-                        <input type="radio" id="z4" name="zucchero" value="4"/>
-                        <label for="z4"></label>
+                        <input type="radio" id="sugar3" name="sugar" value="3">
+                        <label for="sugar3" data-value="3"></label>
 
-                        <input type="radio" id="z5" name="zucchero" value="5"/>
-                        <label for="z5"></label>
-                    </fieldset>
-                </section>
+                        <input type="radio" id="sugar4" name="sugar" value="4">
+                        <label for="sugar4" data-value="4"></label>
 
-                <section>
+                        <input type="radio" id="sugar5" name="sugar" value="5">
+                        <label for="sugar5" data-value="5"></label>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
                     <h3>Milk</h3>
-                    <label>
-                        <input type="checkbox" name="milk" value="1"/>
-                        Add milk
-                    </label>
-                </section>
+                    <input id="milk" type="checkbox" name="milk" value="1" />
+                    <label for="milk"><img src="../../img/icons/check.svg" alt=""/></label>
+                </fieldset>
 
+                <button type="submit">Add to cart</button>
             </form>
         </section>
-
-        <footer>
-            <button type="submit">Add to cart</button>
-        </footer>
     </main>
 </body>
 

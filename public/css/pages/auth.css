@@ -1,9 +1,77 @@
+@import "../base.css";
+@import "../components/button.css";
+@import "../components/entry.css";
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+header,
+footer {
+  width: 100%;
+  text-align: center;
+}
+
 header h1 {
   font-size: var(--font-size-title-large);
   text-transform: capitalize;
   text-align: center;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--header-footer-size);
+}
+
+
+label {
+  align-self: flex-start;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 298px;
+}
+
+div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 0;
+}
+
+label {
+  display: block;
+}
+
+form fieldset {
+  position: relative;
+}
+
+div button[type="button"] {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+div button[type="button"] img {
+  display: block;
+}
+
+/*go back button*/
 footer a {
   display: inline-flex;
   align-items: center;
