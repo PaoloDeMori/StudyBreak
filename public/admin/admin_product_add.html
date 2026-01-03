@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Study Break - Costumize Item
+    </title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Study Break
+        </h1>
+    </header>
+    <main>
+        <header>
+            <a href="homepage.html">
+                <img src="../../img/icons/back.svg" alt="go back" />
+            </a>
+        </header>
+        <section>
+            <img src="../../img/cappuccino.png" alt="Cappuccino" />
+            <form action="add-to-cart.php" method="POST" id="customize-item">
+                <input type="hidden" name="product_id" value="1">
+
+                <div id="imageProductPicker">
+                    <label for="inputPicture">
+                        <img alt="product picture" />
+                    </label>
+                    <input type="file" id="inputPicture" name="productPicture" />
+                </div>
+
+                <section>
+                    <fieldset>
+                        <legend>General Values</legend>
+                        <label>Name
+                            <input type="text" name="productName" />
+                        </label><br />
+
+                        <label>Price
+                            <input type="number" name="productPrice" min="0.1" max="1000" />
+                        </label><br />
+
+                        <label>Availability
+                            <input type="number" name="productAvailability" min="1" max="100000" />
+                        </label><br />
+                    </fieldset>
+                </section>
+
+                <section>
+                    <fieldset>
+                        <legend>Ingredients</legend>
+                        <ul>
+                            <li>
+                                <p>Ingrediente 1</p>
+                                <input type="hidden" name="Ingrediente1" value="Ingrediente1" />
+                            </li>
+                        </ul>
+                    <button type="button" id="showIngredients">
+                        <img src="../../img/icons/plus.svg" alt=""/>
+                    </button>
+                    </fieldset>
+                </section>
+                <button type="submit">Add to cart</button>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
